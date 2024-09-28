@@ -1,38 +1,198 @@
-.App {
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #18bc9c;
+}
+
+/* Home Section */
+.home {
   text-align: center;
+  padding: 40px;
+  background-color: #ecf0f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #18bc9c;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Skills Section */
+.skills {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 10px 0;
+}
+
+/* Experience Section */
+.experience {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.experience div {
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.projects div {
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contact label {
+  margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #18bc9c;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.contact button:hover {
+  background-color: #16a085;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .skills, .experience, .projects, .about, .contact {
+    margin: 10px;
   }
+}
+/* Projects Section */
+.projects {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+  margin: 0 0 10px 0;
+  color: #18bc9c;
+}
+
+.project-item p {
+  margin: 0;
+  color: #555;
 }
